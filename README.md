@@ -41,7 +41,7 @@ Change the activity IDs by replacing the numbers by the corresponding labels. Th
 "Appropriately label the data set with descriptive variable names". The choice was made to simply change all the names to lower case, remove the parentheses and change the "-" signs into ".". It was also observed that some variable names contained the pattern "BodyBody", which appeared to be a typo as it doesn't match the naming pattern explained in the "features\_info.txt" and is thus changed into "body". However, the variable names are not further modified since the Code Book is available for additional clarification.   
   
 * Sixth step:    
-Use the data frame obtained at the end of Step 5 to create an independent, tidy data frame containing the mean of each variable for each activity and each subject. The chaining method is again used for these two operations; functions from the dplyr package are used. First, the group\_by() function is called to break up the data set into groups of rows based on the values of the "activity" and "subject" variables. This allows the use of the summarise\_each() and mean() functions on the grouped data to obtained the desired output: a tidy data set in a wide form with 180 observations (6 activities* 30 subjects) and 68 variables.  
+Use the data frame obtained at the end of Step 5 to create an independent, tidy data frame containing the mean of each variable for each activity and each subject. The chaining method is again used for these two operations; functions from the dplyr package are used. First, the group\_by() function is called to break up the data set into groups of rows based on the values of the "activity" and "subject" variables. This allows the use of the summarise\_each() and mean() functions on the grouped data to obtained the desired output: a tidy data set in a wide form with 180 observations (6 activities* 30 subjects) and 68 variables: it has one variable per column and one observation per row.  
 
   
 * Seventh step:  
@@ -52,7 +52,7 @@ Create a txt file containing the data set obtained in step 6. This file is calle
 
 If you need to open the final data set in R, the command is the following:
 ```{r}
-final_output <- read.table("./finaldataset.txt", header = TRUE)
+final_output <- read.table("finaldataset.txt", header = TRUE)
 View(final_output)
 ```
 
