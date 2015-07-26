@@ -52,7 +52,7 @@ Create a txt file containing the data set obtained in step 6. This file is calle
 
 If you need to open the final data set in R, the command is the following:
 ```{r}
-final_output <- read.table(""./finaldataset.txt", header = TRUE)
+final_output <- read.table("./finaldataset.txt", header = TRUE)
 View(final_output)
 ```
 
