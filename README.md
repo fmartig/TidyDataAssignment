@@ -28,7 +28,7 @@ NB: the "tbl_df()" function from the dplyr package is used to load the data into
 "Extract only the measurements on the mean and standard deviation for each measurement". 
 The original data contain several types of variables which could match. The following choices were made based on the information provided in the "features_info.txt" file. 
   + The suffixe "std()" added to the variable name (ex: *tBodyAcc-std()-X*) indicates that the corresponding variable is the standard deviation of a measurement. Thus, the key word "std" is used with the grepl() function to extract the subset of desired columns. 
-  + The suffixe "mean()" (ex: *tGravityAcc-mean()-X*) has a similar meaning and was used to identify and extract the columns corresponding to the means of each measurements. The mean frequencies (*meanFreq*) and the various means used on the angle measurements (ex: *angle(tBodyAccMean,gravity)*) are excluded from the data set: the key word "Freq" is used with grepl() to exclude the mean frequencies from the subset. See below the "Selection of variables" paragraph for the explanation of this choice.   
+  + The suffixe "mean()" (ex: *tGravityAcc-mean()-X*) has a similar meaning and was used to identify and extract the columns corresponding to the means of each measurements. The mean frequencies (*meanFreq*) and the various means used on the angle measurements (ex: *angle(tBodyAccMean,gravity)*) are excluded from the data set: the key word "Freq" is used with grepl() to exclude the mean frequencies from the subset. See below the "Selection of the "mean" variables" paragraph for the explanation of this choice.   
   
   NB: the variable names are detailed in the adjacent code book.  
 
