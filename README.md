@@ -1,6 +1,6 @@
 ###Tidy data assignment for the "Getting and Cleaning data" course on Coursera
 ***
-The aim of this project was to collect data from [this study](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and prepare a tidy data set. The R script "run_analyis.R" in this repository allows you to perform all the steps, from downloading the data in your working directory to creating a tidy data set and writing it into a txt file. The Code Book "il faudra qu'il ait un nom" describes the variables and their units. 
+The aim of this project was to collect data from [this study](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and prepare a tidy data set. The R script "run_analyis.R" in this repository allows you to perform all the steps, from downloading the data in your working directory to creating a tidy data set and writing it into a txt file. The Code Book "CodeBook.md" describes the variables and their units. 
 The downloaded files contain additional information on the experimental set up, the method used and the original variables.    
 
 ***
