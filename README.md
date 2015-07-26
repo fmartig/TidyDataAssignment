@@ -50,7 +50,7 @@ Create a txt file containing the data set obtained in step 6. This file is calle
   
 > Read the txt file created with the script  
 
-If you need to open the final data set in R, the command is the following:
+If you need to open and view the final data set in R, the command is the following:
 ```{r}
 final_output <- read.table("finaldataset.txt", header = TRUE)
 View(final_output)
