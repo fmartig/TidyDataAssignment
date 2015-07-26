@@ -1,6 +1,14 @@
-### Code Book for the Tidy data project
+### Code Book for the Tidy Data Assignment
 
-The tidy data frame in "finaldataset.txt" has 68 variables.  
+The tidy data frame in "finaldataset.txt" has 68 variables, described below with their unit. The explanation of the procedure followed to obtain the original measurements can be found with the original data in the "README.txt" and the "features\_info.txt" files. The description of the steps applied to obtain the final tidy data set can be found on the README.md file in this repository.  
+
+***
+
+**Notes on the units:**
+*	The units are written in their stantardardized form, eg rad.s<sup>-1</sup> for radians/second
+*	The variables representing a signal which has been derived in time see their units divided by the time unit (seconds): for example,  a velocity in rad.s<sup>-1</sup> is derived into an acceleration in rad.s<sup>-2</sup>
+*	The "magnitude" variables are obtained after a normalization (Euclidean norm), they are unit-less
+*	The Fast Fourier Transform is a discrete fourier transform; it does not change the unit of the signals
 
 ***
 **activity**
@@ -17,14 +25,12 @@ Description of the activity performed when the measurements were taken.
 ***    
 **subject**  
 
-Numbers corresponding to the identifier of the volunteers taking part in the experiment.   
+Numbers corresponding to the identifiers of the volunteers taking part in the experiment.   
 Ranges from 1 to 30  
 
 ****
 **IMPORTANT NOTE: the following variables are *average values* of the corresponding variables in the original dataset, computed for each activity and each subject.**  
 
-***
-**Note: the units are written in their stantardardized form, eg rad.s<sup>-1</sup> for radians/second**
 
 ***
 **tbodyacc.mean...x**  
@@ -139,7 +145,7 @@ unit: g.s<sup>-1</sup>
 
 Mean of the body angular velocity along the X axis  
 unit: rad.s<sup>-1</sup> 
-			
+	
 ***
 **tbodygyro.mean...y**  
 
@@ -208,126 +214,195 @@ unit: rad.s<sup>-2</sup>
 **tbodyaccmag.mean..**    
 
 Mean of the magnitude of the body linear acceleration    
-unit: g   
 
 ***
 **tbodyaccmag.std..**    
 
 Standard deviation of the magnitude of the body linear acceleration  
-unit: g  
 
 ***
 **tgravityaccmag.mean..**    
 
 Mean of the magnitude of the gravity acceleration    
-unit: g   
 
 ***
 **tgravityaccmag.std..**    
 
 Standard deviation of the magnitude of the gravity acceleration    
-unit: g   
 
 ***
 **tbodyaccjerkmag.mean..**    
 
 Mean of the magnitude of the body linear acceleration derived in time      
-unit: g.s<sup>-1</sup>  
 
 ***
 **tbodyaccjerkmag.std..**    
 
 Standard deviation of the magnitude of the body linear acceleration derived in time      
-unit: g.s<sup>-1</sup>  
 
 ***
 **tbodygyromag.mean..**    
 
+Mean of the magnitude of the body angular velocity  
+
 ***
 **tbodygyromag.std..**    
+
+Standard deviation of the magnitude of the body angular velocity  
 
 ***
 **tbodygyrojerkmag.mean..**    
 
+Mean of the magnitude of the body angular acceleration 
+
 ***
 **tbodygyrojerkmag.std..**    
+
+Standard deviation of the magnitude of the body angular acceleration 
 
 ***
 **fbodyacc.mean...x**    
 
+Mean of the body linear acceleration signal along the X axis, after a Fast Fourier Transform    
+unit: g
+
 ***
 **fbodyacc.mean...y**    
+
+Mean of the body linear acceleration signal along the Y axis, after a Fast Fourier Transform    
+unit: g
 
 ***
 **fbodyacc.mean...z**    
 
+Mean of the body linear acceleration signal along the Z axis, after a Fast Fourier Transform    
+unit: g
+
 ***
 **fbodyacc.std...x**    
+
+Standard deviation of the body linear acceleration signal along the X axis, after a Fast Fourier Transform    
+unit: g
 
 ***
 **fbodyacc.std...y**    
 
+Standard deviation of the body linear acceleration signal along the Y axis, after a Fast Fourier Transform    
+unit: g
+
 ***
 **fbodyacc.std...z**    
+
+Standard deviation of the body linear acceleration signal along the Z axis, after a Fast Fourier Transform    
+unit: g
 
 ***
 **fbodyaccjerk.mean...x**    
 
+Mean of the body linear acceleration along the X axis, derived in time, after a Fast Fourier Transform      
+unit: g.s<sup>-1</sup> 
+
 ***
 **fbodyaccjerk.mean...y**    
+
+Mean of the body linear acceleration along the Y axis, derived in time, after a Fast Fourier Transform     
+unit: g.s<sup>-1</sup> 
 
 ***
 **fbodyaccjerk.mean...z**    
 
+Mean of the body linear acceleration along the Z axis, derived in time, after a Fast Fourier Transform     
+unit: g.s<sup>-1</sup> 
+
 ***
 **fbodyaccjerk.std...x**    
+
+Standard deviation of the body linear acceleration along the X axis, derived in time, after a Fast Fourier Transform  unit: g.s<sup>-1</sup> 
 
 ***
 **fbodyaccjerk.std...y**    
 
+Standard deviation of the body linear acceleration along the Y axis, derived in time, after a Fast Fourier Transform  unit: g.s<sup>-1</sup> 
+
 ***
 **fbodyaccjerk.std...z** 
+
+Standard deviation of the body linear acceleration along the Z axis, derived in time, after a Fast Fourier Transform  unit: g.s<sup>-1</sup> 
 
 ***
 **fbodygyro.mean...x**    
 
+Mean of the body angular velocity along the X axis, after a Fast Fourier Transform      
+unit: rad.s<sup>-1</sup> 
+
 ***
 **fbodygyro.mean...y**    
+
+Mean of the body angular velocity along the Y axis, after a Fast Fourier Transform      
+unit: rad.s<sup>-1</sup> 
 
 ***
 **fbodygyro.mean...z** 
 
+Mean of the body angular velocity along the Z axis, after a Fast Fourier Transform        
+unit: rad.s<sup>-1</sup> 
+
 ***
 **fbodygyro.std...x**    
+
+Standard deviation of the body angular velocity along the X axis, after a Fast Fourier Transform          
+unit: rad.s<sup>-1</sup> 
 
 ***
 **fbodygyro.std...y**    
 
+Standard deviation of the body angular velocity along the Y axis, after a Fast Fourier Transform          
+unit: rad.s<sup>-1</sup> 
+
 ***
 **fbodygyro.std...z** 
+
+Standard deviation of the body angular velocity along the Z axis, after a Fast Fourier Transform          
+unit: rad.s<sup>-1</sup> 
 
 ***
 **fbodyaccmag.mean..**    
 
+Mean of the magnitude of the body linear acceleration, after a Fast Fourier Transform     
+   
 ***
 **fbodyaccmag.std..**    
+
+Standard deviation of the magnitude of the body linear acceleration, after a Fast Fourier Transform     
 
 ***
 **fbodyaccjerkmag.mean..** 
 
+Mean of the magnitude of the body linear acceleration derived in time, after a Fast Fourier Transform          
+
 ***
 **fbodyaccjerkmag.std..**    
+
+Standard deviation of the magnitude of the body linear acceleration derived in time, after a Fast Fourier Transform  
 
 ***
 **fbodygyromag.mean..**    
 
+Mean of the magnitude of the body angular velocity, after a Fast Fourier Transform     
+
 ***
 **fbodygyromag.std..** 
 
+Standard deviation of the magnitude of the body angular velocity, after a Fast Fourier Transform     
+ 
 ***
 **fbodygyrojerkmag.mean..**    
 
+Mean of the magnitude of the body angular acceleration, after a Fast Fourier Transform     
+
 ***
 **fbodygyrojerkmag.std..**    
+
+Standard deviation of the magnitude of the body angular acceleration, after a Fast Fourier Transform     
 
 ***
